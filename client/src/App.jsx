@@ -1,11 +1,30 @@
-import React from 'react';
-import { Button, buttonVariants } from './components/ui/button';
+'use client'
+import React from "react";
+import { Button, buttonVariants } from "./components/ui/button";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import Sponsor from "@/components/sponser";
+import About from "@/components/Sponser";
+import Theme from "@/components/Theme";
+import Prize from "@/components/Prize";
+import Gallery from "@/components/Gallery";
+import FAQ from "@/components/Faq";
+import Footer from "@/components/Footer";
+
 const App = () => {
-return (
-    <div className='m-10 p-10'>
-<div className='text-2xl text-black'>Testing Tailwind</div>
-<Button variant="destructive" className='text-white mt-4'>Testing ShadCN</Button>
-</div>
-)
-}
-export default App
+  return (
+    <div>
+        <Navbar/>
+        <Hero/>
+        <Sponsor/>
+        <About/>
+        <Theme/>
+        <Prize/>
+        <Gallery/>
+        <FAQ/>
+        <Footer/>
+    </div>
+  );
+};
+
+export default App;
